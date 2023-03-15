@@ -6,7 +6,6 @@ const SinglePizza = ()=>{
   const params = useParams();
   const navigate = useNavigate();
   const [pizza,setPizza] = useState([]);
-  console.log(params._id);
   useEffect(()=>{
    const fetchPizzaData = async ()=>{
     try{

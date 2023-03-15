@@ -7,7 +7,6 @@ const Product = (props)=>{
  
    const addToCart = (event,pizza)=>{
    event.preventDefault();
-   console.log(pizza)
   
    let _cart = {...cart};
 
@@ -25,7 +24,6 @@ _cart.items[pizza._id] = 1
     }
     
     _cart.totalItems += 1;
-    console.log(_cart);
     setCart(_cart);
     
 }
